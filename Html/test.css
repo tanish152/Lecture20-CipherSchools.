@@ -1,0 +1,10 @@
+/* *{
+    font-family: Arial, Helvetica, sans-serif;
+} */
+div p {
+    background-color: yellow;
+}
+a[target]
+{
+    background-color: cyan;
+}
