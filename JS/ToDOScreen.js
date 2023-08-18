@@ -3,7 +3,7 @@
     render
     ()
     return
-    {
+{
         {
         
         <div className="Screen">     
@@ -13,7 +13,7 @@
         </div>
         </div>
 
-    };
+    }
  }
-}
+
  export default ToDoScreen;
