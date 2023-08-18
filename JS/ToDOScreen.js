@@ -1,19 +1,12 @@
- import { Component} from"react";
- class ToDoScreen extends Component{
-    render
-    ()
-    return
-{
-        {
-        
-        <div className="Screen">     
-        <h1 className="ui heading center"> To dOlist</h1>
-        </div>
-        <button className="ui secondary button"> Add task </button>
-        </div>
-        </div>
-
-    }
- }
-
- export default ToDoScreen;
+import * as React from 'react';  
+import Stack from '@mui/material/Stack';  
+import Button from '@mui/material/Button';  
+export default function BasicButtons() {  
+  return (  
+    <Stack spacing={2} direction="row">  
+   <Button variant="text">Text</Button>  
+      <Button variant="contained">Contained</Button>  
+      <Button variant="outlined">Outlined</Button>  
+    </Stack>  
+  );  
+}  
