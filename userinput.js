@@ -1,34 +1,18 @@
-import { useState } from 'react';
 
-export default function App() {
-  const [message, setMessage] = useState('');
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-  const [updated, setUpdated] = useState(message);
-
-  const handleChange = (event) => {
-    setMessage(event.target.value);
-  };
-
-  const handleClick = () => {
-    // 👇 "message" stores input field value
-    setUpdated(message);
-  };
+function Football() {
+  const shoot = () => {
+    alert("Great Shot!");
+  }
 
   return (
-    <div>
-      <input
-        type="text"
-        id="message"
-        name="message"
-        onChange={handleChange}
-        value={message}
-      />
-
-      <h2>Message: {message}</h2>
-
-      <h2>Updated: {updated}</h2>
-
-      <button onClick={handleClick}>Update</button>
-    </div>
+    <button onClick={shoot}>Take the shot!</button>
   );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
+
+              
